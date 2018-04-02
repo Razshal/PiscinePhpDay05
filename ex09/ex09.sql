@@ -1,0 +1,1 @@
+SELECT count(*) AS `nb_short-films` FROM (SELECT duration FROM db_mfonteni.film WHERE duration < 42) AS Derive;

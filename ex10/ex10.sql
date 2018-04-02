@@ -1,0 +1,1 @@
+SELECT title, id_genre AS Title FROM db_mfonteni.film WHERE (SELECT name FROM db_mfonteni.genre WHERE genre.id_genre LIKE film.id_genre) LIKE 'erotic' ORDER BY prod_year DESC;
