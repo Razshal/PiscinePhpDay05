@@ -1,1 +1,1 @@
-CREATE DATABASE db_mfonteni
+CREATE DATABASE IF NOT EXISTS db_mfonteni
