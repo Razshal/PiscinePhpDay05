@@ -1,0 +1,1 @@
+SELECT last_name, first_name, date(birthdate) FROM db_mfonteni.user_card WHERE year(birthdate) LIKE 1989 ORDER BY last_name;
