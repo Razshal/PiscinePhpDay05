@@ -1,0 +1,1 @@
+SELECT floor_number AS floor, (nb_seats / cinema.floor_number) AS seats FROM db_mfonteni.cinema ORDER BY seats;

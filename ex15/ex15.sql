@@ -1,0 +1,1 @@
+SELECT REVERSE(RIGHT(phone_number, LENGTH(phone_number) - 1)) as `enoh-pelet` FROM db_mfonteni.distrib WHERE phone_number REGEXP '^[0][5]';
