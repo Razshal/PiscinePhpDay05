@@ -1,1 +1,1 @@
-SELECT last_name as NAME FROM db_mfonteni.user_card WHERE id_user LIKE (SELECT id_user FROM db_mfonteni.member WHERE id_user LIKE user_card.id_user AND id_sub LIKE (SELECT id_sub FROM db_mfonteni.subscription WHERE price > 42));
+SELECT UCASE(U.last_name) as NAME, U.first_name, S.price FROM db_mfonteni.subscription S INNER JOIN db_mfonteni.member M ON S.id_sub=M.id_sub INNER JOIN db_mfonteni.user_card U ON U.id_user=M.id_user_card WHERE S.price > 42 ORDER BY last_name, first_name;
